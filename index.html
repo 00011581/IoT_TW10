@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.rawgit.com/bernii/gauge.js/master/dist/gauge.min.js"></script>
 </head>
 <body>
     <div class="data-head"><h1>DHT Sensor Realtime Reading</h1></div>
@@ -19,7 +20,10 @@
         </div>
         <div calss="data-item">
             <h2>Humidity</h2>
-            <p class="value" id="humidity">10%</p>
+            <!-- <p class="value" id="humidity">10%</p> -->
+            <!-- <div id="humidity" style="width: 200px; height: 200px;">60%</div> -->
+            <canvas id="humidity"></canvas>
+            <label id="humidity-value">41%</label>
         </div>
     </div>
 
